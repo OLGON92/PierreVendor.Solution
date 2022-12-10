@@ -16,8 +16,8 @@ namespace PierreVendor.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Item newItem = new Item("test");
-      Assert.AreEqual(typeof(Item), newItem.GetType());
+      Order newOrder = new Order(title, description, totalLoaves, totalPastries, date);
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
   }
 }
