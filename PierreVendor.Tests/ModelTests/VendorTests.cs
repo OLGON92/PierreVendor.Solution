@@ -107,17 +107,17 @@ namespace PierreVendor.Tests
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
       //Arrange
-      string name = "Heart Coffee";
+      string title = "Heart Coffee";
       string description = "Coffee shop";
       int totalLoaves = 2;
       int totalPastries = 3;
       DateTime date = new DateTime(2022, 03, 18);
-      Order newOrder = new Order(name,description,totalLoaves, totalPastries, date);
+      Order newOrder = new Order(title,description,totalLoaves, totalPastries, date);
       List<Order> newList = new List<Order> { newOrder };
       string name = "Heart Coffee";
-      string description = "Coffee Shop";
-      Vendor newVendor = new Vendor(name, description);
-      newVendor.AddItem(newItem);
+      string vendDescription = "Coffee Shop";
+      Vendor newVendor = new Vendor(name, vendDescription);
+      newVendor.AddOrder(newOrder);
 
       //Act
       List<Order> result = newVendor.Orders;
