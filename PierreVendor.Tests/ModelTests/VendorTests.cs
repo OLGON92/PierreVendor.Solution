@@ -50,6 +50,21 @@ namespace PierreVendor.Tests
       //Assert
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void GetDescripOfVendor_ReturnsDescripOfVendor_String()
+    {
+      //Arrange
+      string name = "Heart Coffee";
+      string description = "Coffee Shop";
+      Vendor newVendor = new Vendor(name, description);
+
+      //Act
+      string result = newVendor.DescripOfVendor;
+
+      //Assert
+      Assert.AreEqual(description, result);
+    }
     /*
     [TestMethod]
     public void GetAll_ReturnsAllCategoryObjects_CategoryList()
