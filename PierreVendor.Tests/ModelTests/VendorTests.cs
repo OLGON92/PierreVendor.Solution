@@ -65,24 +65,26 @@ namespace PierreVendor.Tests
       //Assert
       Assert.AreEqual(description, result);
     }
-    /*
+    
     [TestMethod]
-    public void GetAll_ReturnsAllCategoryObjects_CategoryList()
+    public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
       //Arrange
-      string name01 = "Work";
-      string name02 = "School";
-      Category newCategory1 = new Category(name01);
-      Category newCategory2 = new Category(name02);
-      List<Category> newList = new List<Category> { newCategory1, newCategory2 };
+      string name01 = "Heart Coffee";
+      string description01 = "Coffee Shop";
+      string name02 = "Nuvrei Coffee";
+      string description02 = "Coffee Shop";
+      Vendor newVendor1 = new Vendor(name01, description01);
+      Vendor newVendor2 = new Vendor(name02, description02);
+      List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
       //Act
-      List<Category> result = Category.GetAll();
+      List<Vendor> result = Vendor.GetAll();
 
       //Assert
       CollectionAssert.AreEqual(newList, result);
     }
-
+    /*
     [TestMethod]
     public void Find_ReturnsCorrectCategory_Category()
     {
