@@ -14,7 +14,7 @@ namespace PierreVendor.Tests
     }
 
     [TestMethod]
-    public void OrderConstructor_CreatesInstanceOfOrder_Order()
+    public void OrderConstructor_CreatesInstancesOfOrder_Order()
     {
       DateTime date = new DateTime(2022, 03, 18);
       Order newOrder = new Order("Heart Coffee order", "Bread & Pastries", 150, date);
