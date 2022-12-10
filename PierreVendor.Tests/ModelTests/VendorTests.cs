@@ -21,20 +21,21 @@ namespace PierreVendor.Tests
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
-    /*[TestMethod]
-    public void GetName_ReturnsName_String()
+    [TestMethod]
+    public void GetNameOfVendor_ReturnsNameOfVendor_String()
     {
       //Arrange
-      string name = "Test Category";
-      Category newCategory = new Category(name);
+      string name = "Heart Coffee";
+      string description = "Coffee Shop";
+      Vendor newVendor = new Vendor(name);
 
       //Act
-      string result = newCategory.Name;
+      string result = newVendor.NameOfVendor;
 
       //Assert
       Assert.AreEqual(name, result);
     }
-
+    /*
     [TestMethod]
     public void GetId_ReturnsCategoryId_Int()
     {
