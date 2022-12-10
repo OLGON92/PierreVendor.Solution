@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace PierreVendor.Models
 {
@@ -55,6 +56,7 @@ namespace PierreVendor.Models
       Loaves = totalLoaves;
       Pastries = totalPastries;
       Price = GetOrderTotal(totalLoaves, totalPastries);
+      Date = date;
       _instances.Add(this);
       Id = _instances.Count;
     }
