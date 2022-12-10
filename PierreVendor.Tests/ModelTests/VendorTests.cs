@@ -27,7 +27,7 @@ namespace PierreVendor.Tests
       //Arrange
       string name = "Heart Coffee";
       string description = "Coffee Shop";
-      Vendor newVendor = new Vendor(name);
+      Vendor newVendor = new Vendor(name, description);
 
       //Act
       string result = newVendor.NameOfVendor;
