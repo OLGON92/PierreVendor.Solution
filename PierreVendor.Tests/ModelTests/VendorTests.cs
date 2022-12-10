@@ -35,13 +35,14 @@ namespace PierreVendor.Tests
       //Assert
       Assert.AreEqual(name, result);
     }
-    /*
+    
     [TestMethod]
-    public void GetId_ReturnsCategoryId_Int()
+    public void GetId_ReturnsVendorId_Int()
     {
       //Arrange
-      string name = "Test Category";
-      Category newCategory = new Category(name);
+      string name = "Heart Coffee";
+      string description = "Coffee Shop";
+      Vendor newVendor = new Vendor(name, description);
 
       //Act
       int result = newCategory.Id;
@@ -49,7 +50,7 @@ namespace PierreVendor.Tests
       //Assert
       Assert.AreEqual(1, result);
     }
-
+    /*
     [TestMethod]
     public void GetAll_ReturnsAllCategoryObjects_CategoryList()
     {
