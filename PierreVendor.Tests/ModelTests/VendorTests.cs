@@ -45,7 +45,7 @@ namespace PierreVendor.Tests
       Vendor newVendor = new Vendor(name, description);
 
       //Act
-      int result = newCategory.Id;
+      int result = newVendor.Id;
 
       //Assert
       Assert.AreEqual(1, result);
