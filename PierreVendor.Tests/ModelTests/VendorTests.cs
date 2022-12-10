@@ -102,23 +102,28 @@ namespace PierreVendor.Tests
       //Assert
       Assert.AreEqual(newVendor2, result);
     }
-    /*
+    
     [TestMethod]
-    public void AddItem_AssociatesItemWithCategory_ItemList()
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
       //Arrange
-      string description = "Walk the dog.";
-      Item newItem = new Item(description);
-      List<Item> newList = new List<Item> { newItem };
-      string name = "Work";
-      Category newCategory = new Category(name);
-      newCategory.AddItem(newItem);
+      string name = "Heart Coffee";
+      string description = "Coffee shop";
+      int totalLoaves = 2;
+      int totalPastries = 3;
+      DateTime date = new DateTime(2022, 03, 18);
+      Order newOrder = new Order(name,description, date);
+      List<Order> newList = new List<Order> { newOrder };
+      string name = "Heart Coffee";
+      string description = "Coffee Shop";
+      Vendor newVendor = new Vendor(name, description);
+      newVendor.AddItem(newItem);
 
       //Act
-      List<Item> result = newCategory.Items;
+      List<Order> result = newVendor.Orders;
 
       //Assert
       CollectionAssert.AreEqual(newList, result);
-    }*/
+    }
   }
 }
