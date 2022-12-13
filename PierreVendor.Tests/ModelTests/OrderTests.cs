@@ -71,5 +71,22 @@ namespace PierreVendor.Tests
       //Assert
       Assert.AreEqual(orderPrice, result);
     }
+
+    [TestMethod]
+    public void GetDate_ReturnsDate_DateTime()
+    {
+      //Arrange
+      string orderTitle = "Heart Coffee";
+      string orderDescrip = "Bread & Pastries";
+      int orderPrice = 150;
+      DateTime date = new DateTime(2022, 03, 18);
+
+      //Act
+      Order newOrder = new Order(orderTitle, orderDescrip, orderPrice, date);
+      int result = newOrder.Date;
+
+      //Assert
+      Assert.AreEqual(date, result);
+    }
   }
 }
