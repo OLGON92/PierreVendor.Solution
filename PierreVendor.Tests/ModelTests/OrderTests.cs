@@ -25,15 +25,34 @@ namespace PierreVendor.Tests
     public void GetTitle_ReturnsTitle_String()
     {
       //Arrange
-      string title = "Heart Coffee";
+      string orderTitle = "Heart Coffee";
+      string orderDescrip = "Bread & Pastries";
+      int orderPrice = 150;
+      DateTime date = new DateTime(2022, 03, 18);
 
       //Act
-      Order newOrder = new Order(title);
+      Order newOrder = new Order(orderTitle, orderDescrip, orderPrice, date);
       string result = newOrder.Title;
 
       //Assert
-      Assert.AreEqual(description, result);
+      Assert.AreEqual(orderTitle, result);
     }
 
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      //Arrange
+      string orderTitle = "Heart Coffee";
+      string orderDescrip = "Bread & Pastries";
+      int orderPrice = 150;
+      DateTime date = new DateTime(2022, 03, 18);
+
+      //Act
+      Order newOrder = new Order(orderTitle, orderDescrip, orderPrice, date);
+      string result = newOrder.Description;
+
+      //Assert
+      Assert.AreEqual(orderDescrip, result);
+    }
   }
 }
