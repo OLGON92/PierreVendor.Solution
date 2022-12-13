@@ -113,7 +113,7 @@ namespace PierreVendor.Tests
       string orderTitle2 = "Nuvrei Coffee";
       string orderDescrip2 = "Pastries";
       int orderPrice2 = 85;
-      DateTime date1 = new DateTime(2022, 04, 12);
+      DateTime date2 = new DateTime(2022, 04, 12);
       Order newOrder1 = new Order(orderTitle1, orderDescrip1, orderPrice1, date1);
       Order newOrder2 = new Order(orderTitle2, orderDescrip2, orderPrice2, date2);
       List<Order> newOrderList = new List<Order> { newOrder1, newOrder2 };
