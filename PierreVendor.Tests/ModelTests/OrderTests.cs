@@ -101,5 +101,28 @@ namespace PierreVendor.Tests
       // Assert
       CollectionAssert.AreEqual(newOrder, result);
     }    
+
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      //Arrange
+      string orderTitle1 = "Heart Coffee";
+      string orderDescrip1 = "Bread & Pastries";
+      int orderPrice1 = 150;
+      DateTime date1 = new DateTime(2022, 03, 18);
+      string orderTitle2 = "Nuvrei Coffee";
+      string orderDescrip2 = "Pastries";
+      int orderPrice2 = 85;
+      DateTime date1 = new DateTime(2022, 04, 12);
+      Order newOrder1 = new Order(orderTitle1, orderDescrip1, orderPrice1, date1);
+      Order newOrder2 = new Order(orderTitle2, orderDescrip2, orderPrice2, date2);
+      List<Order> newOrderList = new List<Order> { newOrder1, newOrder2 };
+
+      //Act
+      List<Order> result = Order.GetAll();
+
+      //Assert
+      CollectionAssert.AreEqual(newOrderList, result);
+    }
   }
 }
