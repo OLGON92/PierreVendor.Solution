@@ -83,10 +83,23 @@ namespace PierreVendor.Tests
 
       //Act
       Order newOrder = new Order(orderTitle, orderDescrip, orderPrice, date);
-      int result = newOrder.Date;
+      DateTime result = newOrder.Date;
 
       //Assert
       Assert.AreEqual(date, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      // Arrange
+      List<Order> newOrder = new List<Order> { };
+
+      // Act
+      List<Order> result = Order.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newOrder, result);
+    }    
   }
 }
