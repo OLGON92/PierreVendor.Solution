@@ -20,5 +20,20 @@ namespace PierreVendor.Tests
       Order newOrder = new Order("Heart Coffee order", "Bread & Pastries", 150, date);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+    [TestMethod]
+    public void GetTitle_ReturnsTitle_String()
+    {
+      //Arrange
+      string title = "Heart Coffee";
+
+      //Act
+      Order newOrder = new Order(title);
+      string result = newOrder.Title;
+
+      //Assert
+      Assert.AreEqual(description, result);
+    }
+
   }
 }
