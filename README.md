@@ -2,7 +2,7 @@
 
 #### By _**Oscar Gonzalez**_
 
-#### _This is an app that lets you create a vendor list, and create an order for each vendor in the list. You can add multiple orders to one vendor as well._
+#### _This is an app that lets you create a vendor list, and create an order for each vendor in the list. You can add multiple orders to each vendor as well._
 
 ## Technologies Used
 
