@@ -2,7 +2,7 @@
 
 #### By _**Oscar Gonzalez**_
 
-#### _This is an app that lets you create a vendor list, and create an order for each vendor in the list. You can add multiple orders to each vendor as well._
+#### _This is an app that lets you create a vendor list, view said vendor list, create an order for each vendor in the list, and see a list of orders for each vendor._
 
 ## Technologies Used
 
@@ -33,7 +33,8 @@ _This is my ninth project for Epicodus that is meant to show off my understandin
 * _From there navigate to 'PierreVendor'_
 * _Run the command "dotnet build"_
 * _Then run the command "dotnet watch run"_
-
+* _It should then open the development environment in your preferred web browser automatically_
+* _If it does not open automatically, then open your preferred web browser, copy/paste this http://localhost:5000 into your web browser, and you should be able to use the app after that_
 * _To run tests, navigate to 'PierreVendor.Tests' in your terminal and run the command "dotnet build"_
 * _After that run the command "dotnet test"_
 
