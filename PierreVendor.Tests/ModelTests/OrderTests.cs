@@ -22,7 +22,7 @@ namespace PierreVendor.Tests
     }
 
     [TestMethod]
-    public void GetTitle_ReturnsTitle_String()
+    public void OrderConstructor_ReturnsTitle_String()
     {
       //Arrange
       string orderTitle = "Heart Coffee";
