@@ -3,15 +3,22 @@
 }
 
 <h1>Add a vendor</h1>
-<p>Add a vendor here:</p>
 
-<form action="/vendors" method="post">
-  <label for="name">Vendor name</label>
-  <input id="name" name="name" type="text">
-  <label for="description">Description of vendor e.g. Cafe, Restaurant, etc.</label>
-  <input id="description" name="description" type="text">
-  <button type="submit">Add</button>
-</form>
+<div id="vendInfo">
+  <form action="/vendors" method="post">
+    <br>
+    <br>
+    <label for="name">Vendor name</label>
+    <input id="name" name="name" type="text" required>
+    <br>
+    <br>
+    <label for="description">Description of vendor e.g. Cafe, Restaurant, etc.</label>
+    <input id="description" name="description" type="text" required>
+    <button type="submit">Add</button>
+  </form>
+</div>
 
-<p><a href="/">Back home</a></p>
-<p><a href="/vendors">Back to vendors.</a></p>
+<div id=homeAddVend>
+  <p><a href="/">Back home</a></p>
+  <p><a href="/vendors">Back to vendors.</a></p>
+</div>

@@ -2,17 +2,24 @@
   Layout = "_Layout";
 }
 
-<h1>Add a new order to @Model.NameOfVendor</h1>
+<h1>Add a New Order to @Model.NameOfVendor</h1>
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="orderTitle">Title of order:</label>
-  <input id="orderTitle" name="orderTitle" type="text">
-  <label for="orderDescrip">Description of order:</label>
-  <input id="orderDescrip" name="orderDescrip" type="text">
-  <label for="orderPrice">Total cost of order:</label>
-  <input id="orderPrice" name="orderPrice" type="number">
-  <label for="date">Date of order:</label>
-  <input id="date" name="date" type="date">
-  <button type='submit'>Add Item</button>
+  <div id="vendInfo">
+    <label for="orderTitle">Title of order:</label>
+    <input id="orderTitle" name="orderTitle" type="text" required>
+    <label for="orderDescrip">Description of order:</label>
+    <input id="orderDescrip" name="orderDescrip" type="text" required>
+    <label for="orderPrice">Total cost of order in US Dollars:</label>
+    <input id="orderPrice" name="orderPrice" type="number" required>
+    <label for="date">Date of order:</label>
+    <input id="date" name="date" type="date" required>
+    <button type='submit'>Add Item</button>
+  </div>
 </form>
+
+<div id=homeAddVend>
+  <p><a href='/vendors'>Return to vendor list</a></p>
+  <p><a href='/'>Return to Main Page</a></p>
+</div>
